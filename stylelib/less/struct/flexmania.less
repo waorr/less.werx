@@ -1,0 +1,33 @@
+#flex {
+	.row() {
+		.flexflow(row, nowrap);
+	}
+
+	.row-il() {
+		.flexflow(row, nowrap);
+	}
+
+	.column() {
+		.flexflow(column, nowrap);
+	}
+	
+	.column-il(@min-w) {
+		.flexflow-il(column, nowrap);
+		min-width: @min-w;
+	}
+
+	.grid-x(@max-w) {
+		.flexflow(row, wrap);
+		max-width: @max-w;
+	}
+
+	.grid-y(@max-h) {
+		.flexflow(column, wrap);
+		max-height: @max-h;
+	}
+
+	.item(@shrink: 1, @grow: 1, @basis: auto) {
+		flex: @shrink @grow @basis;
+	}
+
+}

@@ -1,0 +1,19 @@
+.xlate(@x: 0%; @y: 0%) {
+	.xform-hitme(translate(@x, @y));
+}
+
+.xlate-x(@x: 0%) {
+	.xform-hitme(translate(@x));
+}
+
+.xlate-y(@y: 0%) {
+	.xform-hitme(translateY(@y));
+}
+
+.xlate-z(@z: 0%) {
+	.xform-hitme(translateZ(@z));
+}
+
+.xlate3d(@x: 0; @y: 0; @z: 0) {
+	.xform-hitme(translate3d(@x, @y, @z));	
+}

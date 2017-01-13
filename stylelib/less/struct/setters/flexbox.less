@@ -1,0 +1,20 @@
+
+
+.flexflow(@dir, @wrap) {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: @dir @wrap;
+	-webkit-flex-flow: @dir @wrap; 
+}
+
+.flexflow-il(@dir, @wrap) {
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	flex-flow: @dir @wrap;
+	-webkit-flex-flow: @dir @wrap; 
+}
+
+.flex-dir(@dir) {
+	-webkit-flex-direction: @dir;
+	flex-direction: @dir;
+}

@@ -1,0 +1,29 @@
+
+.abs() 		{ position: absolute; }
+.rel() 		{ position: relative; }
+.block()	{ display: block; }
+.ilb() 	 	{ display: inline-block; }
+.inline() 	{ display: inline; }
+
+.ab() 	{ .abs(); .block(); }
+.ailb() { .abs(); .ilb(); }
+.rb() 	{ .rel(); .block(); }
+.rilb() { .rel(); .ilb(); }
+
+.xf-center() {
+	.rilb();
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.size(@x, @y) {
+	height: @y;
+	width: @x;
+}
+
+#vertalign {
+	.top() 		{ vertical-align: top; }
+	.middle() 	{ vertical-align: middle; }
+	.bottom()	{ vertical-align: bottom; }
+	.baseline() { vertical-align: baseline; }
+}

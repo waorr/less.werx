@@ -1,0 +1,21 @@
+
+#border {
+	
+	.get(@size, @style: solid, @color: @t) {
+		border: @arguments;
+	}
+
+	.right(@size, @style: solid, @color: @t) {
+		
+	}
+
+	.radius(@size) {
+		#setters.br(@size);
+	}
+
+	#setters {
+		.br(@v) {
+			border-radius: @val;
+		}
+	}
+}

@@ -1,0 +1,82 @@
+#gradient {
+	.down(@clr1, @clr2) {
+		#setters.lgrd(180deg; @clr1, @clr2);
+	}
+
+	.line(@dir; @stops) {
+		#setters.lgrd(@dir; @stops);
+	}
+
+	#setters {
+		.lgrd(@angle; @stops) {
+			background+: linear-gradient(@angle, @stops);
+		} 
+
+		.cgrd(@extent; @center; @stops) {
+			background+: radial-gradient(circle @extent at @center, @stops);
+		}
+
+		.egrd(@extent; @center; @stops) {
+			background+: radial-gradient(ellipse @extent at @center, @stops);
+		}
+	}
+}
+
+#filter {
+	
+	.none(@v) { 
+		-webkit-filter: none;
+		filter: none; 
+	}
+
+	.blur(@v) { 
+		-webkit-filter: blur(@v); 
+		filter: blur(@v); 
+	}
+
+	.brightness(@v) { 
+		-webkit-filter: brightness(@v); 
+		filter: brightness(@v); 
+	}
+
+	.contrast(@v) { 
+		-webkit-filter: contrast(@v); 
+		filter: contrast(@v); 
+	}
+
+	.dropshadow(@v) { 
+		-webkit-filter: drop-shadow(@v);
+		filter: drop-shadow(@v); 
+	}
+
+	.grayscale(@v) { 
+		-webkit-filter: grayscale(@v); 
+		filter: grayscale(@v); 
+	}
+
+	.hr(@v) { 
+		-webkit-filter: hue-rotate(@v); 
+		filter: hue-rotate(@v); 
+	}
+
+	.invert(@v) { 
+		-webkit-filter: invert(@v); 
+		filter: invert(@v); 
+	}
+
+	.opacity(@v) { 
+		-webkit-filter: opacity(@v); 
+		filter: opacity(@v); 
+	}
+
+	.saturate(@v) { 
+		-webkit-filter: saturate(@v); 
+		filter: saturate(@v); 
+	}
+
+	.sepia(@v) { 
+		-webkit-filter: sepia(@v); 
+		filter: sepia(@v); 
+	}
+}
+

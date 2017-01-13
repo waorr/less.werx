@@ -1,0 +1,19 @@
+.xi-hitme(@v) {
+	transition+_: @v;
+}
+
+.xi(@prop: all, @dur: 250ms, @tf: ease-out, @delay: 0) { 
+	.xi-hitme(@prop);
+	.xi-hitme(@dur);
+	.xi-hitme(@tf);
+
+	& when (isunit(@delay, 'ms')) {
+		.xi-hm(@delay);
+	}
+}
+
+/*.radialpoint-xf(@angle, @distance) {
+	.rotate(@deg);
+	.xlate-y(-(@distance)); 
+	.rotate(-(@deg));
+}*/

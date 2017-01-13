@@ -1,0 +1,60 @@
+#background {
+
+	.set(@color) {
+		background: @color;
+	}
+
+	.color(@color) {
+		background-color: @color;
+	}
+
+	.image(@val) {
+		background-image: @val;
+	}
+
+	.scroll() 	{ background-attachment: scroll; 	}
+	.fixed() 	{ background-attachment: fixed;		}
+
+	#origin {
+		.border() 	{ background-origin: border-box; 	}
+		.padding() 	{ background-origin: padding-box; 	}
+		.content() 	{ background-origin: content-box; 	}
+	}
+
+	#clip {
+		.none() 	{ background-clip: no-clip; 		}
+		.border() 	{ background-clip: border-box; 		}
+		.padding() 	{ background-clip: padding-box; 	}
+		.content() 	{ background-clip: content-box; 	}
+	}
+}
+
+#pattern {
+	#repeat {
+		.none() { background-repeat: none;		}
+		.both() { background-repeat: repeat;   	}
+		.x() 	{ background-repeat: repeat-x; 	}
+		.y() 	{ background-repeat: repeat-y; 	}
+	}
+
+	#size {
+		.set(@xy: auto) 			{ background-size+: @xy @xy; }
+		.set(@x: auto, @y: auto) 	{ background-size+: @x @y;	 }
+
+		.base10() 	{ background-size+: 10% 10%;	}
+		.quarter() 	{ background-size+: 25% 25%;	}
+		.half() 	{ background-size+: 50% 50%;	}
+		.cover() 	{ background-size+: cover;		}
+		.contain() 	{ background-size+: contain;	}
+	}
+
+	#offset {
+		.set(@os: 0) 			{ background-position+: @os @os;	}
+		.set(@osx: 0, @osy: 0) 	{ background-position+: @osx @osy;	}
+
+		.base10() 	{ background-position+: 10% 10%;	}
+		.quarter() 	{ background-position+: 25% 25%;	}
+		.half() 	{ background-position+: 50% 50%;	}
+		.none() 	{ background-position+: 0 0;		}
+	}
+}

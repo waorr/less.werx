@@ -1,0 +1,32 @@
+@import 'functions/rotate.skew.less';
+@import 'functions/scale.less';
+@import 'functions/translate.less';
+
+.xform-hitme(@value) {
+	-webkit-transform+_: @value;
+			transform+_: @value;
+}
+
+.xf-o(@pos: @pos-c) {
+	transform-origin: @pos-c;
+}
+
+.xf-p(@p:400) {
+	-webkit-perspective: @p;
+			perspective: @p;
+}
+
+.xf-po(@pos) {
+	-webkit-perspective-origin: @pos;
+			perspective-origin: @pos;
+}
+
+.bf-vis(@bool: true) {
+	-webkit-backface-visibility: @bool;
+			backface-visibility: @bool;
+}
+
+.be3d(@bool: true) {
+	-webkit-preserve-3d: @bool;
+			preserve-3d: @bool;
+}

@@ -1,0 +1,32 @@
+
+/*************
+	wrapper: No visual style is applies to these containers
+*/
+@structcontainer: 	~"hgroup + nav, main, header hgroup";
+
+/**************
+	container elements provide a styled backdrop for it's content
+	set visual styles (bg, box-shadow, bomp). Colors and shadow values are 
+	computed. Base values and value modifiers are set in the appropriate 
+	config file
+*/
+@container1: 	~"body > header, footer, main > section";
+@container2: 	~"article";
+
+/**************
+	Content elements are textual wrappers. Set text/font styles only 
+	Font colors and text-shadow values are computed. Base values and 
+	value modifiers are set in the appropriate config file
+*/
+
+@content1: "";
+@content2: "";
+
+/**************
+	stateful containers are top level, interactive elements whose color, 
+	shadowing, and and visual display values are determined by the current
+	state of the element. Each wraps one or more content elements. State changes
+	from the container should also apply applicable typeface changes 
+*/
+
+@stateful: ".sw-button";

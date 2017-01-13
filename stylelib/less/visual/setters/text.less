@@ -1,0 +1,36 @@
+
+#text {
+	.left() {
+		.align(left);
+	}
+	.right() {
+		.align(right);
+	}
+	.center() {
+		.align(center);
+	}
+	.justify() {
+		.align(justify);
+		text-justify: inter-word;
+	}
+	.indent(@v: 0) {
+		text-indent: @v;
+	}
+	.align(@v) {
+		text-align: @v;
+	}
+	.nowrap-ellipsis() {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .nowrap() {
+        white-space: nowrap;
+    }
+	.naked() {
+		text-decoration: none;
+	}
+	.shadow(@x: 0, @y: 0, @blur: 0, @color: fade(black, 25), @inset: false) {
+		text-shadow+: @arguments;
+	}
+}

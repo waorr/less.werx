@@ -1,0 +1,13 @@
+
+.rect(@width, @height) {
+  	.size(@width, @height);
+}
+
+.square(@size) {
+  	.rect(@size, @size);
+}
+
+.circle(@size) {
+  	.square(@size);
+	.br(50%);
+}

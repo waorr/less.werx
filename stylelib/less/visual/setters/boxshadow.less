@@ -1,0 +1,8 @@
+#shadow {
+	.drop(@x: 0, @y: 0, @blur: 0, @spread: 0, @color: fade(black, .25)) {
+		box-shadow+: @arguments;
+	}
+	.inset(@x: 0, @y: 0, @blur: 0, @spread: 0, @color: fade(black, .25)) {
+		box-shadow+: @arguments inset; 
+	}
+}

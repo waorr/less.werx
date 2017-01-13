@@ -1,0 +1,7 @@
+.outline(@width: 0px, @style: solid, @color: transparent, @offset: 0) {
+	outline: @width @style @color;
+
+	& when (@offset > 0) {
+		outline-offset: @offset;
+	}
+}
